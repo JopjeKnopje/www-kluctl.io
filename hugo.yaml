@@ -166,9 +166,9 @@ params:
     readingtime:
       enable: false
 
-  remark42:
-    siteID: "kluctl.io"
-    remarkURL: "https://remark42.codablock.de"
+  #remark42:
+  #  siteID: "kluctl.io"
+  #  remarkURL: "https://remark42.codablock.de"
 
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
