@@ -8,7 +8,7 @@ description: >
 
 ## Introduction
 
-Jobs only have some [mutable fields](https://kubernetes.io/docs/concepts/workloads/controllers/job/#mutable-scheduling-directives) making them tricky to patch/update this problem can be solved by using [hooks]({{% ref "docs/kluctl/deployment/hooks" %}}).
+Jobs only have some [mutable fields](https://kubernetes.io/docs/concepts/workloads/controllers/job/#mutable-scheduling-directives) making them tricky to patch/update this problem can be solved by using [hooks]({{% ref "docs/kluctl/deployments/hooks.md" %}}).
 
 
 In the following [example](https://kubernetes.io/docs/concepts/workloads/controllers/job/) we've marked a `Job` to be ran after the deployment, we've also specified kluctl not to wait for its completion.
