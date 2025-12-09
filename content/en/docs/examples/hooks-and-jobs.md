@@ -11,14 +11,12 @@ description: >
 When trying to update a `Jobs` image kubernetes will throw an error. This is because `Jobs` only have some [mutable fields](https://kubernetes.io/docs/concepts/workloads/controllers/job/#mutable-scheduling-directives), making them hard to patch/update.
 > The fields in a Job's pod template that can be updated are node affinity, node selector, tolerations, labels, annotations and scheduling gates.
 
-This problem can be solved by using [hooks]({{% ref "docs/kluctl/deployments/hooks.md" %}}) - hooked resources are deleted by default right before creation. Thus bypassing the entire initial patch/update problem.
-
-
+This problem can be solved by using [hooks]({{% ref "docs/kluctl/deployments/hooks.md" %}}) since hooked resources are deleted by default right before creation. Thus bypassing the entire initial patch/update problem.
 
 
 
 ## Problem Scenario
-Lets say we want to deploy the following perl `Job` using kluctl.
+Let's say we want to deploy the following perl `Job` using kluctl.
 
 ```yaml 
 # job.yaml
