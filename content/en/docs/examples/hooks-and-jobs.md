@@ -85,8 +85,8 @@ kind: Job
 metadata:
   name: pi
   annotations:
-    kluctl.io/hook: post-deploy # comment abtout what it does.
-    kluctl.io/hook-wait: false
+    kluctl.io/hook: post-deploy # execute after deployment is performed.
+    kluctl.io/hook-wait: false  # do not wait for Job to finish.
 spec:
   template:
     spec:
